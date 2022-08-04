@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Penus</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link Flowbite -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    /> -->
+
+    <!-- TailwindCSS Extend Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              sansPro: ["Source Sans Pro", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <!-- Navbar Section --start -->
+    <section
+      class="flex h-[4.2rem] max-w-full justify-center bg-gradient-to-b from-gray-600 via-gray-800 to-gray-900 py-14"
+    >
+      <nav
+        class="font-poppins flex h-full w-full max-w-[110rem] items-center justify-between bg-slate-200 bg-transparent"
+      >
+        <!-- Brand Section --start -->
+        <div class="flex p-6">
+          <img
+            src="./img/logo.png"
+            alt="logo SMK Pelita Nusantara"
+            class="inline-block"
+            width="32"
+            height="3"
+          />
+          <a href="#" class="ml-2 text-2xl font-semibold uppercase text-white"
+            >smk penus</a
+          >
+        </div>
+        <!-- Brand Section --end -->
+
+        <!-- Dropdown Button --start -->
+        <button
+          id="dropdownDivider"
+          data-dropdown-toggle="dropdownDivider"
+          type="button"
+          class="-medium text-md mx-6 inline-flex items-center rounded-lg bg-slate-50 py-2.5 text-center text-white shadow-lg shadow-slate-500 hover:bg-slate-200 focus:outline-none focus:ring-4 focus:ring-gray-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="Capa_1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 490.667 490.667"
+            style="enable-background: new 0 0 490.667 490.667"
+            xml:space="preserve"
+            width="23"
+            height="23"
+            class="mx-3.5"
+          >
+            <g>
+              <path
+                d="M469.333,224h-448C9.551,224,0,233.551,0,245.333c0,11.782,9.551,21.333,21.333,21.333h448   c11.782,0,21.333-9.551,21.333-21.333C490.667,233.551,481.115,224,469.333,224z"
+              />
+              <path
+                d="M21.333,117.333h448c11.782,0,21.333-9.551,21.333-21.333s-9.551-21.333-21.333-21.333h-448C9.551,74.667,0,84.218,0,96   S9.551,117.333,21.333,117.333z"
+              />
+              <path
+                d="M469.333,373.333h-448C9.551,373.333,0,382.885,0,394.667C0,406.449,9.551,416,21.333,416h448   c11.782,0,21.333-9.551,21.333-21.333C490.667,382.885,481.115,373.333,469.333,373.333z"
+              />
+            </g>
+          </svg>
+        </button>
+        <!-- Dropdown Button --end -->
+        <!-- Dropdown Menu --start -->
+        <div
+          id="dropdownDivider"
+          class="z-10 hidden w-44 divide-y divide-gray-100 rounded bg-white shadow dark:divide-gray-600 dark:bg-gray-700"
+        >
+          <ul
+            class="py-1 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownDividerButton"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Earnings</a
+              >
+            </li>
+          </ul>
+          <div class="py-1">
+            <a
+              href="#"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Separated link</a
+            >
+          </div>
+        </div>
+        <!-- Dropdown Menu --end -->
+      </nav>
+    </section>
+    <!-- Navbar Section --end -->
+
+    <!-- Home Page --start -->
+    <section class="w-full bg-gray-900 pt-24">
+      <div class="mx-20 grid min-w-fit grid-cols-2 gap-5 p-5">
+        <div class="mx-5 border-r-2 pr-10">
+          <h1 class="text-5xl capitalize leading-[1.13] text-white">
+            Lorem ipsum dolor sit <span class="text-red-500">amet</span>
+          </h1>
+          <p class="mt-10 text-justify text-lg text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+            sequi veritatis et maiores incidunt! Esse,
+            <!-- <a href="#" class="text-red-500">quo pariatur</a>. Non eligendi, vel -->
+            delectus, quaerat facilis sint incidunt voluptatibus saepe culpa
+            impedit praesentium?
+          </p>
+          <p
+            class="font-sansPro mt-10 rounded-md bg-zinc-700 py-4 px-7 text-justify text-xl font-bold italic text-white"
+          >
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque
+            repellat sint dicta, incidunt quia." <br /><br />
+            - Lorem Ipsum.
+          </p>
+          <button
+            class="mt-12 rounded-full bg-indigo-600 py-3 px-8 text-lg font-semibold text-white shadow-md shadow-indigo-800 hover:bg-indigo-700 hover:shadow-indigo-900"
+          >
+            Daftar
+          </button>
+          <a href="#" class="ml-7 inline-block text-lg text-white underline"
+            >Info Lebih...</a
+          >
+        </div>
+        <img
+          src="./img/penus1.jpg"
+          alt="SMK Penus"
+          class="mx-5 my-auto w-fit justify-self-center rounded-xl border-2 border-slate-300 shadow-2xl sm:shadow-slate-600 lg:shadow-slate-500"
+        />
+      </div>
+    </section>
+    <!-- Home Page --end -->
+
+    <!-- For Gradient Background --start -->
+    <div
+      class="w-full bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 py-24"
+    ></div>
+    <!-- For Gradient Background --end -->
+
+    <!-- About Page --start -->
+    <section class="h-full bg-slate-700 pt-24 pb-20">
+      <div
+        class="mx-auto rounded-2xl bg-slate-50 py-10 shadow-xl shadow-slate-500 sm:w-[40rem] md:w-[50rem] lg:w-[63rem]"
+      >
+        <h1 class="text-center text-5xl font-bold text-black">
+          Tentang <span class="text-sky-400">Kami</span>
+        </h1>
+        <hr class="mx-auto mt-7 mb-9 w-[26rem] border border-zinc-600" />
+        <h2 class="mb-16 px-20 text-center text-2xl">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus eos quidem, consectetur commodi porro at mollitia!"
+        </h2>
+        <div class="grid grid-cols-2 grid-rows-1 gap-10 px-12 text-justify">
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            expedita, ratione nulla obcaecati sequi vero illum nisi accusantium
+            voluptatem officiis reprehenderit itaque rerum sapiente animi libero
+            ad similique excepturi aliquid minima magnam laudantium quis tempora
+            ducimus. Obcaecati earum eum unde error accusantium. Nobis adipisci
+            harum voluptate, alias maxime, omnis mollitia nesciunt modi
+            temporibus provident autem.
+          </p>
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit
+            mollitia temporibus iusto pariatur numquam assumenda dolorum in
+            nesciunt
+            <span class="font-semibold text-red-500">error</span>
+            minus hic nemo rerum quae veritatis animi molestias distinctio
+            aperiam perferendis impedit provident itaque, voluptas expedita?
+            Ullam fuga eos veritatis suscipit nulla quod? Fugit laborum nulla
+            officia perspiciatis mollitia tempore!
+          </p>
+        </div>
+        <h1 class="mt-[5.5rem] text-center text-4xl font-bold">
+          Visi <span class="text-[1.7rem]">&</span> Misi
+          <span class="text-sky-400">Kami</span>
+        </h1>
+        <hr class="mx-auto mt-5 mb-9 w-[23rem] border border-zinc-600" />
+
+        <!-- Visi --start -->
+        <div>
+          <h2 class="ml-[3.5rem] text-2xl font-semibold text-blue-600">Visi</h2>
+          <hr class="mt-1 mb-3 ml-12 w-[30%] border border-blue-300" />
+          <p class="mx-[4.5rem] text-justify text-xl">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad
+            quibusdam fugiat eaque commodi illum sed, exercitationem, aspernatur
+            pariatur non harum aliquam asperiores nam amet eligendi aliquid
+            optio unde in."
+          </p>
+        </div>
+        <!-- Visi --end -->
+
+        <!-- Misi --start -->
+        <div>
+          <h2 class="ml-[3.5rem] mt-9 text-2xl font-semibold text-blue-600">
+            Misi
+          </h2>
+          <hr class="mt-1 mb-3 ml-12 w-[30%] border border-blue-300" />
+          <ol class="mx-14 text-justify text-lg">
+            <li
+              class="mb-[2.8rem] first-letter:float-left first-letter:pr-2 first-letter:text-7xl first-letter:font-bold first-letter:text-sky-300"
+            >
+              1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              necessitatibus voluptate ab vero accusamus deleniti maxime
+            </li>
+            <li
+              class="mb-[2.8rem] first-letter:float-left first-letter:pr-2 first-letter:text-7xl first-letter:font-bold first-letter:text-sky-400"
+            >
+              2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              accusantium.
+            </li>
+            <li
+              class="mb-[2.8rem] first-letter:float-left first-letter:pr-2 first-letter:text-7xl first-letter:font-bold first-letter:text-sky-500"
+            >
+              3 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aliquam, sunt.
+            </li>
+            <li
+              class="mb-[2.8rem] first-letter:float-left first-letter:pr-2 first-letter:text-7xl first-letter:font-bold first-letter:text-sky-600"
+            >
+              4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              nihil?
+            </li>
+            <li
+              class="mb-[2.8rem] first-letter:float-left first-letter:pr-2 first-letter:text-7xl first-letter:font-bold first-letter:text-sky-700"
+            >
+              5 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, quis modi eaque in perspiciatis officiis.
+            </li>
+          </ol>
+        </div>
+        <!-- Misi --end -->
+      </div>
+    </section>
+    <!-- About Page --end -->
+
+    <!-- For Gradient Background --start -->
+    <div
+      class="w-full bg-gradient-to-b from-slate-700 via-slate-600 to-slate-500 py-24"
+    ></div>
+    <!-- For Gradient Background --end -->
+
+    <!-- Our Activities --start -->
+    <section class="h-fit bg-slate-500 pt-24">
+      <h2 class="text-center text-5xl font-bold text-white">Aktivitas Kami</h2>
+      <hr class="mx-auto mt-7 mb-9 w-[26rem] border border-black" />
+      <div class="mx-12 grid grid-cols-2 grid-rows-2 gap-7">
+        <h2>Kegiatan 1</h2>
+        <p
+          class="w-fit self-center rounded-xl bg-gray-800 px-5 py-4 text-justify text-slate-400"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          quasi repellat magni, debitis voluptates aut voluptate esse nisi
+        </p>
+        <img
+          src="./img/kegiatanpenus1.jpg"
+          alt="Kegiatan Pramuka SMK Penus"
+          class="row-span-2 w-fit rounded-xl"
+        />
+      </div>
+    </section>
+    <!-- Our Activities --end -->
+
+    <!-- Footer --start -->
+    <footer class="mt-32 w-full bg-slate-900"></footer>
+    <!-- Footer --end -->
+  </body>
+</html>
